@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>To-Do List</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h1>To-Do List</h1>
+
+<!-- Button to add new task -->
+<a th:href="@{/add}">➕ Add New Task</a>
+<br><br>
+
+<!-- Table of todos -->
+<table border="1" cellpadding="8" cellspacing="0">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Completed</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Loop through todos -->
+        <tr th:each="todo : ${todos}">
+            <td th:text="${todo.id}"></td>
+            <td th:text="${todo.title}"></td>
+            <td>
+                <!-- Checkbox to toggle completed -->
+                <form th:action="@{'/toggle/' + ${todo.id}}" method="post">
+                    <input type="checkbox" th:checked="${todo.completed}" onclick="this.form.submit()"/>
+                </form>
+            </td>
+            <td>
+                <a th:href="@{'/edit/' + ${todo.id}}">✏️ Edit</a> |
+                <a th:href="@{'/delete/' + ${todo.id}}">🗑️ Delete</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
