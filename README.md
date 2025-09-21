@@ -32,24 +32,27 @@ This project demonstrates basic **CRUD operations**:
 ```
 git clone https://github.com/yourusername/todo-springboot.git
 cd todo-springboot
+```
 2. Build & Run
 If using Maven:
 
-```mvn spring-boot:run
+```
+mvn spring-boot:run
+```
 
 If using Gradle:
-``./gradlew bootRun
+```./gradlew bootRun ```
 
 3. Open in browser
-App: http://localhost:8080
-H2 Console: http://localhost:8080/h2-console
+App: ```http://localhost:8080```
+H2 Console: ```http://localhost:8080/h2-console```
 
 H2 Login settings:
 yaml
-JDBC URL: jdbc:h2:mem:testdb
+JDBC URL: ```jdbc:h2:mem:testdb
 Username: sa
 Password: 
-
+```
 
 📂 Project Structure
 bash
