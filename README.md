@@ -51,11 +51,8 @@ jdbc:h2:mem:testdb
 ```
 - Username: sa
 - Password: 
-```
----
-📂 Project Structure
-bash
-Copy code
+
+### 5. 📂 Project Structure :
 src
  ├─ main
  │   ├─ java/com/example/todo
