@@ -52,17 +52,19 @@ jdbc:h2:mem:testdb
 - Username: sa
 - Password: 
 
-### 5. 📂 Project Structure :
+### 5. 📂 Project Structure
 src
  ├─ main
  │   ├─ java/com/example/todo
- │   │   ├─ model/Todo.java              # Entity (Task)
+ │   │   ├─ model/Todo.java                 # Entity (Task)
  │   │   ├─ repository/TodoRepository.java  # JPA Repository
  │   │   ├─ controller/TodoController.java  # Handles requests
- │   │   └─ TodoApplication.java         # Main Spring Boot app
+ │   │   └─ TodoApplication.java            # Main Spring Boot app
  │   └─ resources
  │       ├─ templates
- │       │   ├─ index.html               # List all tasks
- │       │   ├─ add.html                 # Add new task
- │       │   └─ edit.html                # Edit task
- │       └─ application.properties       # H2 + JPA config
+ │       │   ├─ index.html                  # List all tasks
+ │       │   ├─ add.html                    # Add new task
+ │       │   └─ edit.html                   # Edit task
+ │       └─ application.properties          # H2 + JPA config
+vbnet
+
