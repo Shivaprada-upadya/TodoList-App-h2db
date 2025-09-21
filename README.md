@@ -29,32 +29,28 @@ This project demonstrates basic **CRUD operations**:
 ## 🛠️ Setup & Run
 
 ### 1. Clone the repo
-```bash
+```
 git clone https://github.com/yourusername/todo-springboot.git
 cd todo-springboot
 2. Build & Run
 If using Maven:
 
-bash
-Copy code
-mvn spring-boot:run
-If using Gradle:
+```mvn spring-boot:run
 
-bash
-Copy code
-./gradlew bootRun
+If using Gradle:
+``./gradlew bootRun
+
 3. Open in browser
 App: http://localhost:8080
-
 H2 Console: http://localhost:8080/h2-console
 
 H2 Login settings:
-
 yaml
-Copy code
 JDBC URL: jdbc:h2:mem:testdb
 Username: sa
 Password: 
+
+
 📂 Project Structure
 bash
 Copy code
