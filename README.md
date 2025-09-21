@@ -51,8 +51,9 @@ jdbc:h2:mem:testdb
 ```
 - Username: sa
 - Password: 
-
 ### 5. 📂 Project Structure
+
+```plaintext
 src
  ├─ main
  │   ├─ java/com/example/todo
@@ -66,5 +67,3 @@ src
  │       │   ├─ add.html                    # Add new task
  │       │   └─ edit.html                   # Edit task
  │       └─ application.properties          # H2 + JPA config
-vbnet
-
