@@ -45,11 +45,12 @@ App: ```http://localhost:8080```
 H2 Console: ```http://localhost:8080/h2-console```
 
 ### 4. H2 Login settings:
-yaml
-JDBC URL: ```
+- JDBC URL: 
+```
 jdbc:h2:mem:testdb
-Username: sa
-Password: 
+```
+- Username: sa
+- Password: 
 ```
 ---
 📂 Project Structure
